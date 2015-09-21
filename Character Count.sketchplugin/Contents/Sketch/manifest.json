@@ -1,0 +1,24 @@
+{
+	"name": "Character Count",
+	"description": "Skethc plugin to count the number of characters in a text layer",
+	"author": "Andrew Fiorillo",
+	"homepage": "http://github.com/andrewfiorillo/sketch-character-count",
+	"version": "1.0",
+	"identifier": "com.andrewfiorillo.sketch.sketch-character-count",
+	"compatibleVersion": "3",
+	"bundleVersion": "1",
+	"commands": [
+		{
+			"name": "Count",
+			"identifier": "count",
+			"shortcut": "",
+			"script": "count.js",
+			"handler": "count"
+		}
+	],
+	"menu": {
+		"items": [
+			"count"
+		]
+	}
+}
