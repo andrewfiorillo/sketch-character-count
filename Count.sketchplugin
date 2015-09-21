@@ -1,8 +1,0 @@
-var app = NSApplication.sharedApplication();
-var s = selection;
-
-if (s.count() > 0 && (s[0].class() == "MSTextLayer")) {
-	app.displayDialog(s[0].stringValue().length());
-} else {
-	app.displayDialog("You must select a text layer!");
-}
