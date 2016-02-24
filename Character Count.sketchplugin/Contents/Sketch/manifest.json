@@ -1,6 +1,6 @@
 {
 	"name": "Character Count",
-	"description": "Skethc plugin to count the number of characters in a text layer",
+	"description": "Sketch plugin to count the number of characters in a text layer",
 	"author": "Andrew Fiorillo",
 	"homepage": "http://github.com/andrewfiorillo/sketch-character-count",
 	"version": "1.0",
