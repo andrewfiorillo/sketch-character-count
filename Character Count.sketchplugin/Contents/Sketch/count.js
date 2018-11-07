@@ -1,19 +1,17 @@
+var UI = require('sketch/ui')
 
 function count(context) {
 	
-	var app = NSApplication.sharedApplication(),
-		text = context.selection.firstObject(),
-		count;
+	var count, text = context.selection.firstObject()
 	
 	if (!text || text.class() != "MSTextLayer") {
-		app.displayDialog("Select a text layer!");
-		return;
+		UI.message("Select a text layer!"); return
 	} else if (text.isEditingText()) {
-		count = text.editingDelegate().textView().selectedRange().length;
+		count = text.editingDelegate().textView().selectedRange().length
 	} else {
-		count = text.stringValue().length();
+		count = text.stringValue().length()
 	}
 
-	app.displayDialog(count);
+	UI.message(`✏️ Character Count: ${count}`)
 
 }
